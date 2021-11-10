@@ -1,12 +1,20 @@
 package com.sunny.spring.EmailApplication;
 
-public class AdvSpellChecker {
+public class AdvSpellChecker implements SpellChecker  {
+	
+//	public  AdvSpellChecker(String string) {
+//		// TODO Auto-generated constructor stub
+//		
+//		System.out.println(string);
+//	}
+
+//	public String AdvSpellChecker(String name) {
+//		return name;
+//	}
+	
+
 	public void checkSpelling(String message) {
 		System.out.println(message!=null);
-		if((message != null) || (message != "")) {
-			System.out.println(message);
-		} else {
-			throw new RuntimeException("Error");
-		}
+		System.out.println(message);
 	}
 }
